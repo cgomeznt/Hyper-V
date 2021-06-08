@@ -28,3 +28,5 @@ Crear una maquina virtual
 
 
 .. figure:: ../images/keepalive.png
+
+Volvemos nuevmamente al nodo02.dominio.local para configurar el Hyper-V de Replica

@@ -134,7 +134,6 @@ Volvemos a probar
 
 .. figure:: ../images/config/32.png
 
-
 Ya tenemos los certificados copiados en el nodo02.dominio.local ahora los vamos a importar con la ayuda del mmc
 
 .. figure:: ../images/config/33.png
@@ -176,8 +175,71 @@ Ahora importamos el Root Test
 .. figure:: ../images/config/47.png
 
 
+Una vez creados todos los certificados, debemos agregar la siguiente clave de registro en ambos servidores ::
+
+	reg add “HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\Replication” /v DisableCertRevocationCheck /d 1 /t REG_DWORD /f
+
+.. figure:: ../images/config/48.png
 
 
+Volvemos nuevamente al nodo02.dominio.local para configurar el Hyper-V de Replica
 
 
+.. figure:: ../images/config/49.png
+
+.. figure:: ../images/config/50.png
+
+.. figure:: ../images/config/51.png
+
+.. figure:: ../images/config/52.png
+
+.. figure:: ../images/config/53.png
+
+
+Y Aplicar: la configuración del servidor de réplica está completa. 
+
+Habilitamos en le Firewall el puerto para la replicación, los hacemos de en el nodo02.dominio.local
+
+.. figure:: ../images/config/66.png
+
+
+El último paso para configurar la replicación, es habilitar la replicación de una determinada máquina virtual; obviamente, esto debe hacerse en el servidor primario, nodo01.dominio.local:
+
+No olvides en nodo01.dominio.local se deben importar el certificados.CertReq Test Root dentro de Trusted Root Certification Authorities
+
+.. figure:: ../images/config/54.png
+
+.. figure:: ../images/config/55.png
+
+.. figure:: ../images/config/56.png
+
+.. figure:: ../images/config/57.png
+
+.. figure:: ../images/config/58.png
+
+.. figure:: ../images/config/59.png
+
+.. figure:: ../images/config/60.png
+
+.. figure:: ../images/config/61.png
+
+.. figure:: ../images/config/62.png
+
+.. figure:: ../images/config/63.png
+
+.. figure:: ../images/config/64.png
+
+.. figure:: ../images/config/65.png
+
+.. figure:: ../images/config/67.png
+
+Ahora vamos a ver el status de la replica
+
+.. figure:: ../images/config/68.png
+
+.. figure:: ../images/config/69.png
+
+Nos vamos al nodo02.dominio local y debemos ver la Maquina Virtual.
+
+.. figure:: ../images/config/70.png
 
