@@ -10,6 +10,8 @@ En el nodo01.dominio.local se deben exportar los certificados y copiarlos en el 
 	nodo02.dominio.local
 	CertReq Test Root
 
+Habilitar en ambos servidores **Advanced Sharing Setting** del network
+
 En el nodo02.dominio.local se deben importar los certificados.
 	nodo02.dominio.local dentro de certificados personales
 	CertReq Test Root dentro de Trusted Root Certification Authorities
@@ -30,3 +32,5 @@ Crear una maquina virtual
 .. figure:: ../images/keepalive.png
 
 Volvemos nuevmamente al nodo02.dominio.local para configurar el Hyper-V de Replica
+
+habiliar el Firewall en ambos servidores para la Replica del Hyper-V
