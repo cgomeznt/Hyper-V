@@ -1,11 +1,6 @@
-failover.rst
+Como hacer Failover en las Replicas de Hyper-V
+=================
 
-
-En el nodo01.dominio.local se debe ejecutar el comando te Trusted Host.
-	winrm set winrm/config/client '@{TrustedHosts="nodo02.dominio.local"}'
-
-En el nodo02.dominio.local se debe ejecutar el comando te Trusted Host.
-	winrm set winrm/config/client '@{TrustedHosts="nodo01.dominio.local"}'
 
 Habilitamos la replicación en el nodo01.dominio.local
 
@@ -28,7 +23,7 @@ En el nodo01.dominio.local se debe ejecutar el comando te Trusted Host.::
 
 	winrm set winrm/config/client '@{TrustedHosts="nodo02.dominio.local"}'
 
-.. figure:: ../images/failover/05.png
+.. figure:: ../images/failover/06.png
 
 En el nodo02.dominio.local se debe ejecutar el comando te Trusted Host.::
 
@@ -86,7 +81,7 @@ Ahora para regresarlo al nodo01.dominio.local hacemos los mismos pasos de Planne
 .. figure:: ../images/failover/22.png
 
 
-Nos vamos al nodo01.dominio.local y vemos que el estatus de la maquina virtual
+Nos vamos al nodo01.dominio.local y vemos que el estatus de la maquina virtualy tambien vemos como cambio ahora el Primario y el Replicador
 
 .. figure:: ../images/failover/23.png
 
