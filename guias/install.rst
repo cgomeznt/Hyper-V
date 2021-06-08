@@ -30,7 +30,7 @@ Colocar Primary DNS Sufix
 Reiniciamos el Servidor
 
 
-Configurar el archivo hosts
+Configurar el archivo hosts en ambos servidores.
 
 .. figure:: ../images/install/06.png
 
