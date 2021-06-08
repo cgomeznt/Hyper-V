@@ -7,6 +7,7 @@ Este laboratorio se realizo sobre el SO Microsoft Windows Server 2016 Datacenter
 nodo01.dominio.local - 192.168.1.20
 nodo02.dominio.local - 192.168.1.21
 
+Las siguientes configuraciones se deben realizar en ambos Servidores.
 
 **Habilitar Remote Desktop y permitir en el Firewall la conexión**
 
@@ -32,6 +33,19 @@ Reiniciamos el Servidor
 Configurar el archivo hosts
 
 .. figure:: ../images/install/06.png
+
+
+**Habilitar el firewall el ICMP y hacer las pruebas de ping entre los servidores**
+
+.. figure:: ../images/install/24.png
+
+Hacer el ping desde los dos servidores 
+
+.. figure:: ../images/install/25.png
+
+.. figure:: ../images/install/26.png
+
+Las siguientes configuraciones se deben realizar en ambos Servidores.
 
 Hyper-V no se instala de forma predeterminada en los sistemas Windows, se debe instalarlo antes de poder usarlo. El equipo debe tener activo la compatibilidad de BIOS de Virtualización. 
 
