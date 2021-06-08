@@ -8,15 +8,24 @@ nodo01.dominio.local - 192.168.1.20
 nodo02.dominio.local - 192.168.1.21
 
 
-**Habilitar Remote Desktop y permitir en le Firewall la conexión**
+**Habilitar Remote Desktop y permitir en el Firewall la conexión**
 
 .. figure:: ../images/install/01.png
 
-.. figure:: ../images/install/01.png
+.. figure:: ../images/install/02.png
 
 
 
-Configuramos los nombres de los Servidores y el Workgroup
+**Configuramos los nombres de los Servidores y el Workgroup**
+
+.. figure:: ../images/install/03.png
+
+.. figure:: ../images/install/04.png
+
+.. figure:: ../images/install/05.png
+
+Reiniciamos el Servidor
+
 Colocar Primary DNS Sufix
 Configurar el archivo hosts
 
